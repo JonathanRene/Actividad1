@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con Arreglos</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="css/ejercicio14.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Analizador de Números</h1>
+        
+        <!-- Campo de entrada para los números -->
+        <div class="grupo-input">
+            <label for="numeros">Ingresa números separados por comas:</label>
+            <input type="text" id="numeros" placeholder="Ej: 10, 20, 30, 40, 50">
+        </div>
+
+        <!-- Botón para iniciar los cálculos -->
+        <button type="button" id="btnCalcular" onclick="calcularOperaciones()">Calcular</button>
+
+        <!-- Cajas de texto de solo lectura para los resultados -->
+        <div class="grupo-input">
+            <label for="mayor">Número mayor:</label>
+            <input type="text" id="mayor" readonly placeholder="Resultado" class="readonly-input">
+        </div>
+
+        <div class="grupo-input">
+            <label for="menor">Número menor:</label>
+            <input type="text" id="menor" readonly placeholder="Resultado" class="readonly-input">
+        </div>
+
+        <div class="grupo-input">
+            <label for="promedio">Promedio:</label>
+            <input type="text" id="promedio" readonly placeholder="Resultado" class="readonly-input">
+        </div>
+
+        <!-- Div para mostrar mensajes de error de validación -->
+        <div id="mensajeError" class="error"></div>
+    </div>
+
+    <!-- Script de JavaScript -->
+    <script src="js/ejercicio14.js"></script>
+</body>
+</html>

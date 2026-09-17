@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Estudiantes</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="css/ejercicio15.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Calificaciones de Estudiantes</h1>
+        
+        <!-- Campos de entrada para nombre y calificación -->
+        <div class="grupo-input">
+            <label for="nombre">Nombre del estudiante:</label>
+            <input type="text" id="nombre" placeholder="Ej: Juan">
+        </div>
+
+        <div class="grupo-input">
+            <label for="calificacion">Calificación:</label>
+            <input type="text" id="calificacion" placeholder="Ej: 85">
+        </div>
+
+        <!-- Botones de acción -->
+        <button type="button" id="btnAgregar" onclick="agregarEstudiante()">Agregar estudiante</button>
+        <p id="contadorEstudiantes">Estudiantes agregados: 0</p>
+        
+        <button type="button" id="btnCalcular" onclick="calcularResultados()" class="btn-secundario">Calcular</button>
+
+        <!-- Cajas de texto de solo lectura para los resultados -->
+        <div class="grupo-input">
+            <label for="promedio">Calificación promedio:</label>
+            <input type="text" id="promedio" readonly placeholder="Resultado" class="readonly-input">
+        </div>
+
+        <div class="grupo-input">
+            <label for="mejorEstudiante">Mejor calificación (Nombre):</label>
+            <input type="text" id="mejorEstudiante" readonly placeholder="Resultado" class="readonly-input">
+        </div>
+
+        <div class="grupo-input">
+            <label for="peorEstudiante">Peor calificación (Nombre):</label>
+            <input type="text" id="peorEstudiante" readonly placeholder="Resultado" class="readonly-input">
+        </div>
+
+        <!-- Div para mostrar mensajes de error de validación -->
+        <div id="mensajeError" class="error"></div>
+    </div>
+
+    <!-- Script de JavaScript -->
+    <script src="js/ejercicio15.js"></script>
+</body>
+</html>

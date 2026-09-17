@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Kilómetros a Millas</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="css/ejercicio11.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Conversor de Distancia</h1>
+        
+        <!-- Campo de entrada para Kilómetros -->
+        <div class="grupo-input">
+            <label for="kilometros">Distancia en Kilómetros (km):</label>
+            <input type="text" id="kilometros" placeholder="Ej: 10">
+        </div>
+
+        <!-- Botón para iniciar la conversión -->
+        <button type="button" id="btnConvertir" onclick="convertirDistancia()">Convertir</button>
+
+        <!-- Caja de texto de solo lectura para el resultado -->
+        <div class="grupo-input">
+            <label for="millas">Distancia en Millas (mi):</label>
+            <input type="text" id="millas" readonly placeholder="Resultado" class="readonly-input">
+        </div>
+
+        <!-- Div para mostrar mensajes de error de validación -->
+        <div id="mensajeError" class="error"></div>
+    </div>
+
+    <!-- Script de JavaScript -->
+    <script src="js/ejercicio11.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Edad para Votar</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="css/ejercicio13.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>¿Puedes Votar?</h1>
+        
+        <!-- Campo de entrada para la edad -->
+        <div class="grupo-input">
+            <label for="edad">Ingresa tu edad:</label>
+            <input type="text" id="edad" placeholder="Ej: 20">
+        </div>
+
+        <!-- Botón para iniciar la validación -->
+        <button type="button" id="btnVerificar" onclick="verificarEdad()">Verificar</button>
+
+        <!-- Caja de texto de solo lectura para el resultado -->
+        <div class="grupo-input">
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado" readonly placeholder="Esperando validación..." class="readonly-input">
+        </div>
+
+        <!-- Div para mostrar mensajes de error de validación -->
+        <div id="mensajeError" class="error"></div>
+    </div>
+
+    <!-- Script de JavaScript -->
+    <script src="js/ejercicio13.js"></script>
+</body>
+</html>

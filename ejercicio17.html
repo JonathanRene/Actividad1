@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="css/ejercicio17.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Enlace a la librería SweetAlert2 (CDN) para alertas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Mis Tareas Pendientes</h1>
+        
+        <!-- Campo para nueva tarea -->
+        <div class="grupo-input">
+            <input type="text" id="nuevaTarea" placeholder="Ej: Estudiar JavaScript">
+            <button type="button" id="btnAgregar" onclick="agregarNuevaTarea()">Agregar Tarea</button>
+        </div>
+
+        <!-- Contenedor donde se mostrarán las tareas[cite: 10] -->
+        <ul id="listaTareas" class="lista-tareas">
+            <!-- Las tareas aparecerán aquí mediante JS -->
+        </ul>
+    </div>
+
+    <!-- Script de JavaScript -->
+    <script src="js/ejercicio17.js"></script>
+</body>
+</html>
